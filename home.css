@@ -1,0 +1,95 @@
+:root{
+    --darkblue: rgb(77, 90, 132);
+    --lgreen: rgb(105, 183, 121);
+    --olive: rgb(95, 125, 13);
+    --pink: rgb(218, 23, 115);
+    --red: rgb(156, 13, 19);
+    --yellow: rgb(217, 229, 41);
+
+}
+
+html{
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 130%;
+    height:100vh;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+text-decoration: none;
+}
+
+.navbar{
+    background-color: rgba(95, 125, 13, 0.8);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    font-size: 1.8rem;
+    font-family:'Courier New';
+    height: 8%;
+}
+
+.navbar .links{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 1.9rem;
+    font-family:'Courier New';
+    transition: all 0.5s ease;
+}
+
+.navbar .links :hover{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.navbar .links>a{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.navbar .logo{
+    height:130%;
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.start .button{
+    display:flex;
+    justify-content: center;
+    height: 2rem;
+    align-items: center;
+    width:23rem;
+    height: 13rem;
+
+    font-size: 7rem;
+    border-width: 0rem;
+    font-family:fantasy;
+    color: transparent;
+    background: linear-gradient(90deg, var(--darkblue), var(--pink));
+    background-clip: text;
+    transition: all 1s ease;
+}
+
+.start .button:hover{
+    background: linear-gradient(90deg, var(--olive), var(--darkblue));
+    background-clip: text;
+    font-size: 8.5rem;
+    transform: translateY(-1rem)
+}
